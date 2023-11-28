@@ -5,20 +5,20 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles e hot-reloads para desenvolvimento
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles e minifies para produção
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Arquivos lints e fixes
 ```
 npm run lint
 ```
 
-### Customize configuration
+### Alterar configurações
 See [Configuration Reference](https://cli.vuejs.org/config/).
