@@ -9,23 +9,26 @@
         :page="pages[activePage]"
     ></page-viewer>
     <create-page
+        v-if="activePage == 3"
         :page-created="pageCreated"
     ></create-page>
-    <scatter-plot></scatter-plot>
+    <BarChart 
+        v-if="activePage == 0"
+    />
 </template>
 
 <script>
 import PageViewer from './components/PageViewer.vue';
 import NavBar from './components/NavBar.vue';
 import CreatePage from './components/CreatePage.vue';
-import ScatterPlot from './components/ScatterPlot.vue';
+import BarChart from './components/BarChart.vue';
 
 export default {
     components: {
         PageViewer,
         NavBar,
         CreatePage,
-        ScatterPlot
+        BarChart
     },
     created() {
         this.getPages();
