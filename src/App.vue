@@ -15,6 +15,9 @@
     <BarChart 
         v-if="activePage == 0"
     />
+    <ScatterChart
+        v-if="activePage == 0"
+    />
 </template>
 
 <script>
@@ -22,13 +25,15 @@ import PageViewer from './components/PageViewer.vue';
 import NavBar from './components/NavBar.vue';
 import CreatePage from './components/CreatePage.vue';
 import BarChart from './components/BarChart.vue';
+import ScatterChart from './components/ScatterChart.vue';
 
 export default {
     components: {
         PageViewer,
         NavBar,
         CreatePage,
-        BarChart
+        BarChart,
+        ScatterChart
     },
     created() {
         this.getPages();
