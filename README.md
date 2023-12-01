@@ -22,3 +22,8 @@ npm run lint
 
 ### Alterar configurações
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Instalar o chart:
+```
+npm install vue-chartjs chart.js
+```
