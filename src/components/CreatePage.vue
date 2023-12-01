@@ -3,7 +3,7 @@
         <form action="">
             <div class="mb-3">
                 <label for="" class="form-label">
-                    Page Title
+                    Título
                 </label>
                 <input
                     type="text"
@@ -13,7 +13,7 @@
             </div>
             <div class="mb-3">
                 <label for="" class="form-label">
-                    Content
+                    Conteúdo
                 </label>
                 <textarea
                     type="text"
@@ -26,7 +26,7 @@
                 <button
                     class="btn btn-primary"
                     @click.prevent="pageCreated({pageTitle, content})"
-                >Create Page</button>
+                >Postar</button>
             </div>
         </form>
     </div>
