@@ -2,7 +2,7 @@
     <Scatter :data="data" :options="options"/>
   </template>
   
-  <script lang="ts">
+  <script>
   import {
     Chart as ChartJS,
     LinearScale,
