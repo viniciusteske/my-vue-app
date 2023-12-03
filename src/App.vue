@@ -1,13 +1,13 @@
 <template>
-   <nav-bar
+    <nav-bar
         :pages="pages"
         :active-page="activePage"
         :nav-link-click="(index) => activePage = index"
     ></nav-bar>
     <div class="centralize">
         <page-viewer
-        v-if="pages.length>0"
-        :page="pages[activePage]"
+            v-if="pages.length>0"
+            :page="pages[activePage]"
         ></page-viewer>
     </div>
     <create-page
