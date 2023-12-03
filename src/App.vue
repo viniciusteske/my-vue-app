@@ -4,21 +4,37 @@
         :active-page="activePage"
         :nav-link-click="(index) => activePage = index"
     ></nav-bar>
-    <page-viewer
+    <div class="centralize">
+        <page-viewer
         v-if="pages.length>0"
         :page="pages[activePage]"
-    ></page-viewer>
+        ></page-viewer>
+    </div>
     <create-page
         v-if="activePage == 3"
         :page-created="pageCreated"
     ></create-page>
-    <BarChart 
-        v-if="activePage == 0"
-    />
-    <ScatterChart
-        v-if="activePage == 0"
-    />
+    <div class="charts-container">
+        <BarChart 
+            v-if="activePage == 0"
+        />
+        <ScatterChart
+            v-if="activePage == 0"
+        />
+    </div>
 </template>
+
+<style>
+    .charts-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 940px;
+    }
+    .centralize {
+        text-align: center;
+    }
+</style>
 
 <script>
 import PageViewer from './components/PageViewer.vue';
