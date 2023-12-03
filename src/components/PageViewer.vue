@@ -1,8 +1,8 @@
 <template>
     <div class="container">
         <h1>{{page.pageTitle}}</h1>
-        <p>{{page.content}}</p>
-        </div>
+        <div v-html="formattedContent"></div>
+    </div>
 </template>
 
 <script>
@@ -16,6 +16,12 @@ export default {
                     content: ''
                 };
             }
+        }
+    },
+    computed: {
+        formattedContent(){
+            //Substitui as quebras de linha por <br>
+            return this.page.content.replace(/\n/g, '<br>');
         }
     }
 }
