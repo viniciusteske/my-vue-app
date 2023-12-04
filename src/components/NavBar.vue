@@ -1,6 +1,7 @@
 <template>
     <nav 
     :class="[`navbar-${theme}`, `bg-${theme}`, 'navbar', 'navbar-expand-lg']"
+    style="background-color: #FBBA00;"
     >
     <div class="container-fluid">
         <a class="navbar-brand" href="#">SmartFit</a>
@@ -17,7 +18,7 @@
             <button 
                 class="btn btn-primary"
                 @click.prevent="changeTheme()"
-            >Toggle</button>
+            >Alternar cor</button>
         </form>
     </div>
 </nav>

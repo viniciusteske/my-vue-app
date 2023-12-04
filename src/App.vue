@@ -3,28 +3,42 @@
         :pages="pages"
         :active-page="activePage"
         :nav-link-click="(index) => activePage = index"
-    ></nav-bar>
-    <div class="centralize">
-        <page-viewer
-            v-if="pages.length>0"
-            :page="pages[activePage]"
-        ></page-viewer>
+    ></nav-bar> 
+    <div class="page-wrapper">
+        <div class="centralize">
+            <page-viewer
+                v-if="pages.length>0"
+                :page="pages[activePage]"
+            ></page-viewer>
+        </div>
+        <create-page
+            v-if="activePage == 3"
+            :page-created="pageCreated"
+        ></create-page>
+        <div class="charts-container">
+            <BarChart 
+                v-if="activePage == 0"
+            />
+        </div>
+        <br>
+        <p class="centralize">Outro modelo de gráfico<strong>(sem dados relacionados)</strong></p>
+
+        <div class="charts-container">
+            <ScatterChart
+                v-if="activePage == 0"
+            />
+        </div>
     </div>
-    <create-page
-        v-if="activePage == 3"
-        :page-created="pageCreated"
-    ></create-page>
-    <div class="charts-container">
-        <BarChart 
-            v-if="activePage == 0"
-        />
-        <ScatterChart
-            v-if="activePage == 0"
-        />
-    </div>
+    
 </template>
 
 <style>
+    .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
     .charts-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
