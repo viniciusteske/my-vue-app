@@ -6,7 +6,7 @@
 {
     "link": {"text": "Sobre", "url": "about.html"},
     "pageTitle": "Sobre o sistema",
-    "content": "O sistema desenvolvido fornece monitoramento em tempo real dos usuários para prevenção e prestação de socorro."
+    "content": "O sistema desenvolvido fornece monitoramento em tempo real do batimento cardíaco dos usuários para prevenção de acidentes e prestação de socorro."
 },
 {
     "link": {"text": "Contatos", "url": "contact.html"},

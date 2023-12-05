@@ -25,7 +25,7 @@
         data: {
           datasets: [
           {
-            label: 'Scatter Dataset 1',
+            label: 'Dados falsos',
             fill: false,
             borderColor: '#f87979',
             backgroundColor: '#f87979',

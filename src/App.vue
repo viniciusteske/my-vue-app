@@ -21,7 +21,7 @@
             />
         </div>
         <br>
-        <p class="centralize">Outro modelo de gráfico<strong>(sem dados relacionados)</strong></p>
+        <p v-if="activePage == 0" class="centralize">Outro modelo de gráfico<strong>(sem dados relacionados)</strong></p>
 
         <div class="charts-container">
             <ScatterChart

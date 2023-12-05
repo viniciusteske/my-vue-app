@@ -18,7 +18,7 @@
             <button 
                 class="btn btn-primary"
                 @click.prevent="changeTheme()"
-            >Alternar cor</button>
+            >Toggle</button>
         </form>
     </div>
 </nav>
